@@ -62,4 +62,5 @@ Rails.application.configure do
       password: ENV['MAILER_PASSWORD'],
       authentication: 'plain'
   }
+
 end
