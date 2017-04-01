@@ -19,7 +19,6 @@ class RoomsController < ApplicationController
   def create
     @room = current_user.rooms.build(room_params)
 
-
     if @room.save
       if params[:images]
         params[:images].each do |image|
@@ -38,7 +37,7 @@ class RoomsController < ApplicationController
     if current_user == @room.user
       @photos = @room.photos
     else
-      redirect to root_path, notice: "you are not allowed to do this modification"
+      redirect_to root_path, notice: "you are not allowed to do this modification"
     end
   end
 
