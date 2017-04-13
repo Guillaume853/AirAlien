@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ /*
+ *= require jquery-ui
+ */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "toastr";
@@ -69,7 +73,7 @@ body{
   color: #565a5c;
   background-color: #edefed;
   font-size: 18px;
-  font-weight: 400
+  font-weight: 400;
 }
 
 .row-space-1 {
